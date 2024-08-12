@@ -1,0 +1,384 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *,:before, *,:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: rgb(28, 34, 48);
+    font-size: 1.6rem;
+    line-height: 2;
+    color: white;
+}
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 100%;
+}
+/* Utilidades */
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+.menu{
+    display: flex;
+    text-align: right;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    
+}
+.menu__link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+@media (max-width: 480px) {
+    .menu__link {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+        margin-top: 1rem;
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenidoprincipal {
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat:no-repeat;
+    background-position: bottom;
+    width: 100%;
+
+}
+.files__texto{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0 auto 1rem;
+    padding: 2rem;
+}
+.container .contenidoprincipal button{
+    color: white;
+    background-color: rgba(38, 197, 202, 0.996);
+    width: 20rem;
+    height: 4rem;
+    margin-left: 9rem;
+    border-radius:3rem ;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+}
+.contenido__img{
+    text-align: center;
+}
+
+
+
+.box{
+    display: flex;
+    align-items: center;
+
+}
+.grid{
+    display: block;
+    gap: 2rem;
+}
+
+.acceso{
+    text-align: center;
+    padding: 0 4rem 0 4rem;
+
+}
+.box .h{
+    margin: 5rem 5rem 5rem 5rem;
+}
+.productive{
+    margin: 2rem;
+}
+.productive a{
+    text-decoration: none;
+    border-bottom: 1px solid rgba(38, 197, 202, 0.996);
+    color: rgba(38, 197, 202, 0.996);
+}
+
+.box{
+    display: block;
+    margin: rem;
+}
+.perfil{
+    background-color: rgb(5, 18, 41);
+    margin: 2rem;
+}
+.perfil p{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.perfil .perfilcont {
+    display: flex;
+}
+.perfilcont img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 1rem 1rem;
+}
+.perfilcont{
+    margin-right: 18rem;
+}
+.nombre h4{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.nombre h4 span{
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+.formulario {
+    width: 90%;
+    background-color: hsl(221, 48%, 12%);
+    padding: 3rem 10rem 4rem 10rem;
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.formulario div input {
+    padding: 2% 10% 2% 10%;
+    border-radius: 40px;
+}
+
+.formulario div button {
+    padding: 2%;
+    border-radius: 40px;
+    color: white;
+    background-color: rgba(38, 197, 202, 0.996);
+    margin-left: 2%;
+    margin-top: 2rem;
+}
+
+.comillas {
+    align-self: flex-start;
+    margin: 0 20rem -2.4rem 2%;
+}
+.comillas img{
+    width: 25px;
+    height: 25px;
+}
+footer {
+    position: relative;
+    z-index: 1;
+    margin-top: -90px;
+    background-color: rgb(12, 21, 36);
+    padding: 100px 20px 50px 20px;
+}
+
+.pie-pagina {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 30px;
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+}
+
+footer .d-flex {
+    width: 100%;
+}
+
+.social-icons .icon {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    .pie-pagina {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer .d-flex {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pie-pagina {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    footer {
+        padding: 80px 20px 40px 20px;
+    }
+
+    .social-icons .icon {
+        margin-right: 10px;
+    }
+    .formulario {
+        padding: 2rem 2rem 3rem 2rem;
+    }
+
+    .formulario div input {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .formulario div button {
+        padding: 1rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pie-pagina {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 60px 15px 30px 15px;
+    }
+
+    .social-icons .icon {
+        margin-right: 8px;
+    }
+    .formulario {
+        padding: 1.5rem 1rem 2rem 1rem;
+    }
+
+    .formulario div input {
+        padding: 0.75rem;
+    }
+
+    .formulario div button {
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 768px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu__link{
+        text-decoration: none;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .titulo{
+        font-size: 4rem;
+        
+    }
+    .files {
+        height: auto;
+        margin: 0rem 25rem 0rem 25rem;
+    }
+    .files__texto{
+        text-align: center;
+        font-size: 2rem;
+
+    }
+    .files__buttom{
+        text-transform: uppercase;
+        font-weight: 700;
+
+    }
+    
+    .navigatior{
+        display: flex;
+        justify-content: space-between;
+        margin :2rem;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu a{
+        text-decoration: none;
+        padding:2rem ;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        max-width: 50%;
+        margin: 2rem 0 2rem 0;
+    }
+    .box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+        
+    .perfil{
+        background-color: rgb(5, 18, 41);
+        margin: 2rem;
+    }
+
+    .box__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .container .contenidoprincipal button{
+        color: white;
+        background-color: rgba(38, 197, 202, 0.996);
+        width: 20rem;
+        height: 4rem;
+        border-radius:3rem ;
+        margin-left: 30rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    
+    }
+    .box__ilustracion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .productive .titulo{
+        margin-top: 10rem;
+    }
+    .comillas {
+        align-self: flex-start;
+        margin: 2% 0 -1.5% 2%;
+    }
+    
+}
+
